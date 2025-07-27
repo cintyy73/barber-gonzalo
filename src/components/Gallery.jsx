@@ -3,14 +3,14 @@ import { motion } from 'framer-motion';
 import { useState } from 'react';
 import GalleryFull from './GalleryFull';
 
-const galleryImages = [
-  "/src/assets/img_08.jpg",
-  "/src/assets/img_02.jpg",
-  "/src/assets/img_03.jpg",
-  "/src/assets/img_04.jpg",
-  "/src/assets/img_05.jpg",
-  "/src/assets/img_06.jpg"
-];
+import img1 from '../assets/img_08.jpg';
+import img2 from '../assets/img_02.jpg';
+import img3 from '../assets/img_03.jpg';
+import img4 from '../assets/img_04.jpg';
+import img5 from '../assets/img_05.jpg';
+import img6 from '../assets/img_06.jpg';
+
+const galleryImages = [img1, img2, img3, img4, img5, img6];
 
 const MotionBox = motion(Box);
 

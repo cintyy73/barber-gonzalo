@@ -9,7 +9,8 @@ import {
   Button,
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
-import { Scissors } from "lucide-react";
+
+
 
 const MotionBox = motion(Box);
 
@@ -36,7 +37,7 @@ const Hero = () => {
         initial={{ scale: 1.1, opacity: 0.7 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 2 }}
-        bgImage="url('/src/assets/local.jpg')"
+        bgImage="url('/assets/local.jpg')"
         bgSize="cover"
         bgPosition="center"
         filter="blur(1px)"

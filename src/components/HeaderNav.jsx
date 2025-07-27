@@ -1,7 +1,19 @@
 import React from 'react';
-import { Box, Flex, Heading, HStack, Button, IconButton, Drawer, DrawerContent, DrawerHeader, DrawerBody, VStack } from '@chakra-ui/react';
+import {
+  Box,
+  Flex,
+  Heading,
+  HStack,
+  Button,
+  IconButton,
+  Drawer,
+  DrawerContent,
+  DrawerHeader,
+  DrawerBody,
+  VStack,
+  useDisclosure
+} from '@chakra-ui/react';
 import { Menu, X } from 'lucide-react';
-import { useDisclosure } from '@chakra-ui/react';
 
 const HeaderNav = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();

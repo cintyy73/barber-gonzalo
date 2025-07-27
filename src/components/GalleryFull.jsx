@@ -2,9 +2,21 @@ import { Box, VStack, Heading, Text, SimpleGrid, Image } from '@chakra-ui/react'
 import { motion } from 'framer-motion';
 import { Modal, ModalOverlay, ModalContent, ModalHeader, ModalBody, ModalCloseButton } from '@chakra-ui/react';
 
+// Importa las imágenes correctamente
+import img02 from '../assets/img_02.jpg';
+import img03 from '../assets/img_03.jpg';
+import img04 from '../assets/img_04.jpg';
+import img05 from '../assets/img_05.jpg';
+import img06 from '../assets/img_06.jpg';
+import img07 from '../assets/img_07.jpg';
+import img08 from '../assets/img_08.jpg';
+import img09 from '../assets/img_09.jpg';
+import img10 from '../assets/img_10.jpg';
+import img11 from '../assets/img_11.jpg';
+
 const allImages = [
-   '/src/assets/img_02.jpg', '/src/assets/img_03.jpg', '/src/assets/img_04.jpg', '/src/assets/img_05.jpg', '/src/assets/img_06.jpg',
-  '/src/assets/img_07.jpg', '/src/assets/img_08.jpg', '/src/assets/img_09.jpg', '/src/assets/img_10.jpg', '/src/assets/img_11.jpg'
+  img02, img03, img04, img05, img06,
+  img07, img08, img09, img10, img11
 ];
 
 const MotionBox = motion(Box);
@@ -32,7 +44,6 @@ const GalleryFull = ({ isOpen, onClose }) => (
               </MotionBox>
             ))}
           </SimpleGrid>
-
         </VStack>
       </ModalBody>
     </ModalContent>

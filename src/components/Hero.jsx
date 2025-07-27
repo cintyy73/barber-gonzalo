@@ -11,6 +11,7 @@ import {
 import { motion } from "framer-motion";
 
 
+import heroBg from '../assets/local.jpg';
 
 const MotionBox = motion(Box);
 
@@ -37,7 +38,8 @@ const Hero = () => {
         initial={{ scale: 1.1, opacity: 0.7 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 2 }}
-        bgImage="url('/assets/local.jpg')"
+        bgImage={`url(${heroBg})`}
+
         bgSize="cover"
         bgPosition="center"
         filter="blur(1px)"

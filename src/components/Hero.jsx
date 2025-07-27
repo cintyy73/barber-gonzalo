@@ -1,7 +1,15 @@
-import React from 'react';
-import { Box, Flex, VStack, Heading, Text, HStack, Button } from '@chakra-ui/react';
-import { motion } from 'framer-motion';
-import { Scissors } from 'lucide-react';
+import React from "react";
+import {
+  Box,
+  Flex,
+  VStack,
+  Heading,
+  Text,
+  HStack,
+  Button,
+} from "@chakra-ui/react";
+import { motion } from "framer-motion";
+import { Scissors } from "lucide-react";
 
 const MotionBox = motion(Box);
 
@@ -28,14 +36,23 @@ const Hero = () => {
         initial={{ scale: 1.1, opacity: 0.7 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 2 }}
-        bgImage="url('https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=1200&q=80')"
+        bgImage="url('/src/assets/local.jpg')"
         bgSize="cover"
         bgPosition="center"
-        filter="blur(2px)"
-        opacity={0.3}
+        filter="blur(1px)"
+        opacity={0.5}
+        _after={{
+          content: '""',
+          position: "absolute",
+          top: 0,
+          left: 0,
+          w: "full",
+          h: "full",
+          bg: "linear-gradient(to-br, rgba(0,0,0,0.7), rgba(30,30,30,0.6))",
+        }}
       />
       <Flex
-        direction={{ base: 'column', lg: 'row' }}
+        direction={{ base: "column", lg: "row" }}
         align="center"
         justify="space-between"
         zIndex={1}
@@ -60,7 +77,7 @@ const Hero = () => {
           >
             Gonzalo Barbería
           </Heading>
-          <Text fontSize="xl" color="gray.200" >
+          <Text fontWeight={'extrabold'} fontSize={{ base: "xl", md: "2xl", lg: "3xl" }} color="white" textShadow="0 2px 8px rgba(0,0,0,0.8)">
             Estilo clásico con técnicas modernas.
             <br />
             Creando looks únicos en Torcuato.
@@ -82,8 +99,7 @@ const Hero = () => {
             <Button
               as="a"
               href="#galeria"
-              variant="outline"
-              colorScheme="whiteAlpha"
+              colorScheme="gray"
               size="lg"
               fontWeight="bold"
             >
@@ -91,7 +107,7 @@ const Hero = () => {
             </Button>
           </HStack>
         </VStack>
-        <Box position="relative" display={{ base: 'none', lg: 'block' }}>
+        <Box position="relative" display={{ base: "none", lg: "block" }}>
           <MotionBox
             w="80"
             h="80"
@@ -104,7 +120,6 @@ const Hero = () => {
             animate={{ scale: [1, 1.1, 1], opacity: [0.2, 0.3, 0.2] }}
             transition={{ repeat: Infinity, duration: 6 }}
           />
-     
         </Box>
       </Flex>
     </Box>

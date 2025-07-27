@@ -7,7 +7,7 @@ const services = [
   { name: "Corte Clásico", price: "$3.000", description: "Corte tradicional con acabado perfecto" },
   { name: "Barba + Corte", price: "$4.500", description: "Servicio completo de corte y arreglo de barba" },
   { name: "Afeitado", price: "$2.000", description: "Afeitado tradicional con navaja" },
-  { name: "Arreglo de Barba", price: "$2.500", description: "Modelado y cuidado de barba" }
+
 ];
 
 const MotionBox = motion(Box);
@@ -17,7 +17,7 @@ const Services = () => (
     <VStack spacing={8} maxW="7xl" mx="auto" px={4}>
       <Heading size="xl" color="gray.900">Servicios</Heading>
       <Text fontSize="lg" color="gray.600" textAlign="center" maxW="2xl">
-        Ofrecemos servicios de calidad con las mejores técnicas y productos premium
+        Ofrecemos servicios de calidad con las mejores técnicas.
       </Text>
       <SimpleGrid columns={{ base: 1, md: 2, lg: 4 }} spacing={8} w="full">
         {services.map((service, idx) => (

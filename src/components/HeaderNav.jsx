@@ -48,13 +48,11 @@ const HeaderNav = () => {
       {/* Mobile Navigation */}
       <Drawer isOpen={isOpen} placement="top" onClose={onClose} size="xs">
         <DrawerContent>
-          <DrawerHeader>Navegación</DrawerHeader>
           <DrawerBody>
             <VStack spacing={4} align="start">
               <Button variant="ghost" colorScheme="red" w="full" onClick={() => handleNav('inicio')}>Inicio</Button>
               <Button variant="ghost" colorScheme="red" w="full" onClick={() => handleNav('servicios')}>Servicios</Button>
               <Button variant="ghost" colorScheme="red" w="full" onClick={() => handleNav('galeria')}>Galería</Button>
-              <Button variant="ghost" colorScheme="red" w="full" onClick={() => handleNav('/galery')}>Ver más trabajos</Button>
               <Button variant="ghost" colorScheme="red" w="full" onClick={() => handleNav('contacto')}>Contacto</Button>
             </VStack>
           </DrawerBody>

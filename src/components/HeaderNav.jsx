@@ -48,6 +48,7 @@ const HeaderNav = () => {
       {/* Mobile Navigation */}
       <Drawer isOpen={isOpen} placement="top" onClose={onClose} size="xs">
         <DrawerContent>
+          <DrawerHeader>Gonzalo Barbería</DrawerHeader>
           <DrawerBody>
             <VStack spacing={4} align="start">
               <Button variant="ghost" colorScheme="red" w="full" onClick={() => handleNav('inicio')}>Inicio</Button>

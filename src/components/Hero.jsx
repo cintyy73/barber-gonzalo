@@ -15,7 +15,7 @@ import heroBg from '../assets/local.jpg';
 
 const MotionBox = motion(Box);
 
-const Hero = () => {
+const Hero = ({ onOpenGallery }) => {
   return (
     <Box
       as={motion.section}
@@ -100,11 +100,10 @@ const Hero = () => {
               Reservar Turno
             </Button>
             <Button
-              as="a"
-              href="#galeria"
               colorScheme="gray"
               size="lg"
               fontWeight="bold"
+              onClick={onOpenGallery}
             >
               Ver Trabajos
             </Button>

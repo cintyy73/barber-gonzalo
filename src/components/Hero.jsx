@@ -83,7 +83,7 @@ const Hero = () => {
           <Text fontWeight={'extrabold'} fontSize={{ base: "xl", md: "2xl", lg: "3xl" }} color="white" textShadow="0 2px 8px rgba(0,0,0,0.8)">
             Estilo clásico con técnicas modernas.
             <br />
-            Creando looks únicos en Torcuato.
+            Creando looks únicos en Don Torcuato.
           </Text>
           <HStack spacing={4}>
             <Button

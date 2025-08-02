@@ -19,7 +19,7 @@ const Services = () => (
       <Text fontSize="lg" color="gray.600" textAlign="center" maxW="2xl">
         Ofrecemos servicios de calidad con las mejores técnicas.
       </Text>
-      <SimpleGrid columns={{ base: 1, md: 2, lg: 4 }} spacing={8} w="full">
+      <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={8} w="full">
         {services.map((service, idx) => (
           <MotionBox
             key={idx}

@@ -3,12 +3,12 @@ import { motion } from 'framer-motion';
 import { useState } from 'react';
 import GalleryFull from './GalleryFull';
 
-import img1 from '../assets/img_08.jpg';
 import img2 from '../assets/img_02.jpg';
-import img3 from '../assets/img_03.jpg';
-import img4 from '../assets/img_04.jpg';
-import img5 from '../assets/img_05.jpg';
-import img6 from '../assets/img_06.jpg';
+import img1 from '../assets/img_14.jpg';
+import img3 from '../assets/img_13.jpg';
+import img4 from '../assets/img_17.jpg';
+import img5 from '../assets/img_18.jpg';
+import img6 from '../assets/img_21.jpg';
 
 const galleryImages = [img1, img2, img3, img4, img5, img6];
 
